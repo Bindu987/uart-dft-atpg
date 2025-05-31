@@ -73,3 +73,7 @@ California State University, Fresno
 - [Synopsys Design Compiler User Guide](https://www.synopsys.com/)
 - [Synopsys TetraMAX ATPG Tool Docs](https://www.synopsys.com/)
 - [ModelSim User Manual](https://www.mentor.com/)
+
+
+📄 See DISCLAIMER.md for usage and licensing terms.
+
