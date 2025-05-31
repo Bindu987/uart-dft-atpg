@@ -64,6 +64,6 @@ This is a student project and is provided “as is” without any warranty or gu
 
 - **Name:** Bindu Sree Chandu  
 - **University:** California State University, Fresno  
-- **Course:** ECE 242 – Advanced VLSI Testing  
+- **Course:** ECE 242 –  VLSI Testing  
 - **Term:** Spring 2025
 
