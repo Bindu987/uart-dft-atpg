@@ -53,6 +53,7 @@ This project implements a UART (Universal Asynchronous Receiver Transmitter) Tra
 - **Power**: Reduced dynamic power in scan version
 - **Timing**: Better critical path timing with scan
 - **Testability**: 82.16% fault coverage with 0 aborted faults
+- See **docs report** file for results and it has indetail steps for implementation and data analysis
 
 ## 📈 Future Work
 
@@ -76,4 +77,6 @@ California State University, Fresno
 
 
 📄 See DISCLAIMER.md for usage and licensing terms.
+
+
 
