@@ -1,0 +1,386 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : uart_tx_scan
+Version: S-2021.06-SP5-1
+Date   : Sun Apr 13 21:31:39 2025
+****************************************
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg12 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U59/ZN (AOI22_X1)                        0.04       0.29 f
+  U58/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg12/D (DFF_X1)                       0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg12/CK (DFF_X1)                      0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg11 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U57/ZN (AOI22_X1)                        0.04       0.29 f
+  U56/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg11/D (DFF_X1)                       0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg11/CK (DFF_X1)                      0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg10 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U70/ZN (AOI22_X1)                        0.04       0.29 f
+  U69/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg10/D (DFF_X1)                       0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg10/CK (DFF_X1)                      0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg9 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U68/ZN (AOI22_X1)                        0.04       0.29 f
+  U67/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg9/D (DFF_X1)                        0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg9/CK (DFF_X1)                       0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg8 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U66/ZN (AOI22_X1)                        0.04       0.29 f
+  U65/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg8/D (DFF_X1)                        0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg8/CK (DFF_X1)                       0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg7 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U64/ZN (AOI22_X1)                        0.04       0.29 f
+  U63/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg7/D (DFF_X1)                        0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg7/CK (DFF_X1)                       0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg6 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U62/ZN (AOI22_X1)                        0.04       0.29 f
+  U61/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg6/D (DFF_X1)                        0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg6/CK (DFF_X1)                       0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg12 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U59/ZN (AOI22_X1)                        0.04       0.29 f
+  U58/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg12/D (DFF_X1)                       0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg12/CK (DFF_X1)                      0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg11 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U57/ZN (AOI22_X1)                        0.04       0.29 f
+  U56/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg11/D (DFF_X1)                       0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg11/CK (DFF_X1)                      0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+  Startpoint: q_reg1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q_reg6 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  uart_tx_scan       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  q_reg1/CK (DFF_X1)                       0.00       0.00 r
+  q_reg1/QN (DFF_X1)                       0.05       0.05 r
+  U52/ZN (NAND2_X1)                        0.04       0.10 f
+  U60/ZN (NOR2_X1)                         0.05       0.14 r
+  U45/ZN (INV_X1)                          0.03       0.17 f
+  U55/ZN (NOR2_X1)                         0.08       0.25 r
+  U62/ZN (AOI22_X1)                        0.04       0.29 f
+  U61/ZN (OAI211_X1)                       0.03       0.32 r
+  q_reg6/D (DFF_X1)                        0.01       0.33 r
+  data arrival time                                   0.33
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  clock uncertainty                       -0.20       3.80
+  q_reg6/CK (DFF_X1)                       0.00       3.80 r
+  library setup time                      -0.03       3.77
+  data required time                                  3.77
+  -----------------------------------------------------------
+  data required time                                  3.77
+  data arrival time                                  -0.33
+  -----------------------------------------------------------
+  slack (MET)                                         3.44
+
+
+1

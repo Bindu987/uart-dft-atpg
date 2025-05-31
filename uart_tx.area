@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : uart_tx
+Version: S-2021.06-SP5-1
+Date   : Sun Apr 13 20:15:05 2025
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /synopsys/Nangate_FreePDK45/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary.db)
+
+Number of ports:                           13
+Number of nets:                            78
+Number of cells:                           60
+Number of combinational cells:             42
+Number of sequential cells:                17
+Number of macros/black boxes:               0
+Number of buf/inv:                          4
+Number of references:                      16
+
+Combinational area:                 46.018000
+Buf/Inv area:                        2.128000
+Noncombinational area:              91.770003
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   137.788002
+Total area:                 undefined
+1
