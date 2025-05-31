@@ -1,0 +1,89 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : S-2021.06-SP5-1
+// Date      : Sun Apr 13 20:15:05 2025
+/////////////////////////////////////////////////////////////
+
+
+module uart_tx ( clk, reset, tx_start, tx_data, tx_out, tx_done );
+  input [7:0] tx_data;
+  input clk, reset, tx_start;
+  output tx_out, tx_done;
+  wire   tx_start_latched, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n13,
+         n14, n15, n16, n17, n18, n19, n20, n21, n22, n23, n24, n25, n26, n27,
+         n28, n29, n30, n31, n32, n33, n34, n35, n36, n37, n38, n39, n40, n41,
+         n42, n43, n44, n45, n46, n47, n48, n49, n50, n51, n52, n53, n54, n55,
+         n56;
+  wire   [2:0] state;
+  wire   [2:0] next_state;
+  wire   [2:0] bit_count;
+
+  DFFR_X1 \bit_count_reg[0]  ( .D(n56), .CK(clk), .RN(n2), .Q(bit_count[0]), 
+        .QN(n20) );
+  DFFR_X1 \bit_count_reg[2]  ( .D(n55), .CK(clk), .RN(n2), .Q(bit_count[2]), 
+        .QN(n18) );
+  DFFR_X1 \state_reg[0]  ( .D(next_state[0]), .CK(clk), .RN(n2), .Q(state[0]), 
+        .QN(n8) );
+  DFFR_X1 \state_reg[2]  ( .D(next_state[2]), .CK(clk), .RN(n2), .Q(state[2]), 
+        .QN(n6) );
+  SDFFR_X1 \state_reg[1]  ( .D(n39), .SI(1'b0), .SE(state[2]), .CK(clk), .RN(
+        n2), .Q(state[1]) );
+  DFFR_X1 tx_start_latched_reg ( .D(n54), .CK(clk), .RN(n2), .Q(
+        tx_start_latched), .QN(n3) );
+  DFFR_X1 \bit_count_reg[1]  ( .D(n52), .CK(clk), .RN(n2), .Q(bit_count[1]), 
+        .QN(n19) );
+  DFFR_X1 \tx_shift_reg_reg[7]  ( .D(n43), .CK(clk), .RN(n2), .QN(n10) );
+  DFFR_X1 \tx_shift_reg_reg[6]  ( .D(n44), .CK(clk), .RN(n2), .QN(n11) );
+  DFFR_X1 \tx_shift_reg_reg[5]  ( .D(n45), .CK(clk), .RN(n2), .QN(n12) );
+  DFFR_X1 \tx_shift_reg_reg[4]  ( .D(n46), .CK(clk), .RN(n2), .QN(n13) );
+  DFFR_X1 \tx_shift_reg_reg[3]  ( .D(n47), .CK(clk), .RN(n2), .QN(n14) );
+  DFFR_X1 \tx_shift_reg_reg[2]  ( .D(n48), .CK(clk), .RN(n2), .QN(n15) );
+  DFFR_X1 \tx_shift_reg_reg[1]  ( .D(n51), .CK(clk), .RN(n2), .QN(n16) );
+  DFFR_X1 \tx_shift_reg_reg[0]  ( .D(n50), .CK(clk), .RN(n2), .QN(n17) );
+  DFFS_X1 tx_out_reg ( .D(n49), .CK(clk), .SN(n2), .Q(tx_out), .QN(n9) );
+  DFFR_X1 tx_done_reg ( .D(n53), .CK(clk), .RN(n2), .Q(tx_done) );
+  INV_X1 U4 ( .A(reset), .ZN(n2) );
+  NOR3_X2 U29 ( .A1(state[1]), .A2(state[2]), .A3(n8), .ZN(n27) );
+  INV_X1 U30 ( .A(n36), .ZN(n4) );
+  INV_X1 U31 ( .A(n24), .ZN(n5) );
+  INV_X1 U32 ( .A(n39), .ZN(n7) );
+  OAI33_X1 U33 ( .A1(n22), .A2(state[0]), .A3(n3), .B1(n23), .B2(n24), .B3(n20), .ZN(next_state[0]) );
+  NAND2_X1 U34 ( .A1(bit_count[2]), .A2(bit_count[1]), .ZN(n23) );
+  NAND2_X1 U35 ( .A1(tx_data[7]), .A2(n27), .ZN(n26) );
+  NAND2_X1 U36 ( .A1(tx_data[6]), .A2(n27), .ZN(n28) );
+  NAND2_X1 U37 ( .A1(tx_data[5]), .A2(n27), .ZN(n29) );
+  NAND2_X1 U38 ( .A1(tx_data[4]), .A2(n27), .ZN(n30) );
+  NAND2_X1 U39 ( .A1(tx_data[3]), .A2(n27), .ZN(n31) );
+  NAND2_X1 U40 ( .A1(tx_data[2]), .A2(n27), .ZN(n32) );
+  NAND2_X1 U41 ( .A1(tx_data[0]), .A2(n27), .ZN(n33) );
+  NAND2_X1 U42 ( .A1(tx_data[1]), .A2(n27), .ZN(n34) );
+  NAND2_X1 U43 ( .A1(n37), .A2(n38), .ZN(n53) );
+  NAND2_X1 U44 ( .A1(n7), .A2(n6), .ZN(n21) );
+  XOR2_X1 U45 ( .A(state[1]), .B(state[0]), .Z(n39) );
+  OR2_X1 U46 ( .A1(n27), .A2(n5), .ZN(n25) );
+  NAND3_X1 U47 ( .A1(n8), .A2(n6), .A3(state[1]), .ZN(n24) );
+  OAI21_X1 U48 ( .B1(bit_count[0]), .B2(n24), .A(n25), .ZN(n36) );
+  OAI21_X1 U49 ( .B1(n41), .B2(n18), .A(n42), .ZN(n55) );
+  NAND4_X1 U50 ( .A1(bit_count[1]), .A2(bit_count[0]), .A3(n5), .A4(n18), .ZN(
+        n42) );
+  AOI21_X1 U51 ( .B1(n5), .B2(n19), .A(n36), .ZN(n41) );
+  OAI21_X1 U52 ( .B1(n4), .B2(n19), .A(n35), .ZN(n52) );
+  NAND3_X1 U53 ( .A1(n5), .A2(n19), .A3(bit_count[0]), .ZN(n35) );
+  OAI221_X1 U54 ( .B1(n24), .B2(n16), .C1(n25), .C2(n17), .A(n33), .ZN(n50) );
+  OAI221_X1 U55 ( .B1(n24), .B2(n15), .C1(n25), .C2(n16), .A(n34), .ZN(n51) );
+  OAI221_X1 U56 ( .B1(n24), .B2(n14), .C1(n25), .C2(n15), .A(n32), .ZN(n48) );
+  OAI221_X1 U57 ( .B1(n24), .B2(n13), .C1(n25), .C2(n14), .A(n31), .ZN(n47) );
+  OAI221_X1 U58 ( .B1(n24), .B2(n12), .C1(n25), .C2(n13), .A(n30), .ZN(n46) );
+  OAI221_X1 U59 ( .B1(n24), .B2(n11), .C1(n25), .C2(n12), .A(n29), .ZN(n45) );
+  OAI221_X1 U60 ( .B1(n24), .B2(n10), .C1(n25), .C2(n11), .A(n28), .ZN(n44) );
+  OAI221_X1 U61 ( .B1(n24), .B2(n17), .C1(n25), .C2(n9), .A(n21), .ZN(n49) );
+  OAI22_X1 U62 ( .A1(n20), .A2(n25), .B1(bit_count[0]), .B2(n24), .ZN(n56) );
+  OAI21_X1 U63 ( .B1(n25), .B2(n10), .A(n26), .ZN(n43) );
+  NOR2_X1 U64 ( .A1(n8), .A2(n21), .ZN(next_state[2]) );
+  NOR2_X1 U65 ( .A1(n21), .A2(n40), .ZN(n54) );
+  OAI21_X1 U66 ( .B1(tx_start), .B2(tx_start_latched), .A(n8), .ZN(n40) );
+  OR2_X1 U67 ( .A1(state[1]), .A2(state[2]), .ZN(n22) );
+  OAI21_X1 U68 ( .B1(state[0]), .B2(n39), .A(tx_done), .ZN(n37) );
+  NAND3_X1 U69 ( .A1(n7), .A2(n8), .A3(state[2]), .ZN(n38) );
+endmodule
+
