@@ -67,7 +67,6 @@ This project implements a UART (Universal Asynchronous Receiver Transmitter) Tra
 **Bindu Sree Chandu**  
 ECE-242: Digital Systems Testing and Testable Design  
 California State University, Fresno  
-*May 2025*
 
 ## 📄 References
 
@@ -76,7 +75,7 @@ California State University, Fresno
 - [ModelSim User Manual](https://www.mentor.com/)
 
 
-📄 See DISCLAIMER.md for usage and licensing terms.
+📄 This is a student submission as part of academic course work
 
 
 
