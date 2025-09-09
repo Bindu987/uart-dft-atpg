@@ -75,7 +75,7 @@ California State University, Fresno
 - [ModelSim User Manual](https://www.mentor.com/)
 
 
-📄 This is a student submission as part of academic course work
+📄 This is a submission as part of academic course work
 
 
 
